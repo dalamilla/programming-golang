@@ -1,0 +1,7 @@
+---
+- path: /ggl
+  url: https://www.google.com
+- path: /wiki
+  url: https://www.wikipedia.org
+- path: /gopherc
+  url: https://gophercises.com
