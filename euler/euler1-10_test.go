@@ -2,7 +2,7 @@ package euler
 
 import "testing"
 
-func TestEuler001(t *testing.T){
+func TestEuler001(t *testing.T) {
 
 	var Euler001Tests = []struct {
 		input  int
@@ -17,12 +17,12 @@ func TestEuler001(t *testing.T){
 	for _, eu := range Euler001Tests {
 		got := Euler001(eu.input)
 		if got != eu.result {
-				t.Errorf("Euler001(%d) => %d, should return %d", eu.input, got, eu.result)
+			t.Errorf("Euler001(%d) => %d, should return %d", eu.input, got, eu.result)
 		}
 	}
 }
 
-func TestEuler002(t *testing.T){
+func TestEuler002(t *testing.T) {
 	var Euler002Tests = []struct {
 		input  int
 		result int
@@ -44,7 +44,7 @@ func TestEuler002(t *testing.T){
 	}
 }
 
-func TestEuler003(t *testing.T){
+func TestEuler003(t *testing.T) {
 	var Euler003Tests = []struct {
 		input  int
 		result int
@@ -66,7 +66,7 @@ func TestEuler003(t *testing.T){
 	}
 }
 
-func TestEuler004(t *testing.T){
+func TestEuler004(t *testing.T) {
 	var Euler004Tests = []struct {
 		input  int
 		result int
@@ -83,7 +83,7 @@ func TestEuler004(t *testing.T){
 	}
 }
 
-func TestEuler005(t *testing.T){
+func TestEuler005(t *testing.T) {
 	var Euler005Tests = []struct {
 		input  int
 		result int

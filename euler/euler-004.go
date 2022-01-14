@@ -1,4 +1,4 @@
-// A palindromic number reads the same both ways. The largest palindrome made from 
+// A palindromic number reads the same both ways. The largest palindrome made from
 // the product of two 2-startDigit numbers is 9009 = 91 × 99.
 // Find the largest palindrome made from the product of two 3-startDigit numbers.
 
@@ -14,8 +14,8 @@ func Euler004(n int) int {
 
 	for i := startDigit; i < endDigit; i++ {
 		for j := startDigit; j < endDigit; j++ {
-			if isPalindrome(i*j) &&  i * j > max {
-					max = i * j
+			if isPalindrome(i*j) && i*j > max {
+				max = i * j
 			}
 		}
 	}
@@ -27,13 +27,13 @@ func Euler004(n int) int {
 func isPalindrome(n int) bool {
 	rev_num := 0
 	ori_num := n
-	
+
 	for n > 0 {
-			remainder := n % 10
-			rev_num *= 10
-			rev_num += remainder 
-			n /= 10
+		remainder := n % 10
+		rev_num *= 10
+		rev_num += remainder
+		n /= 10
 	}
 
-	return ori_num == rev_num 
+	return ori_num == rev_num
 }

@@ -8,7 +8,7 @@ func Euler003(n int) int {
 	pm := 2
 
 	for n != 1 {
-		if  n % pm == 0{
+		if n%pm == 0 {
 			n = n / pm
 		} else {
 			pm += 1
