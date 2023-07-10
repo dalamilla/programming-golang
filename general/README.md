@@ -1,6 +1,6 @@
-# Mixed
+# General
 
-A list of Mixed programming projects.
+List of General programming projects.
 
 ## List
 
