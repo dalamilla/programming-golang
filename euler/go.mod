@@ -1,3 +1,3 @@
 module github.com/dalamilla/programming-golang/euler
 
-go 1.13
+go 1.23.0
