@@ -1,3 +1,5 @@
+PROJECT_NAME=url-shortener
+
 .PHONY: all
 all: clean deps format lint test build
 
@@ -5,7 +7,7 @@ PHONY: clean
 clean:
 	@echo "Cleaning project"
 	go clean
-	rm -f url-shortener
+	rm -f $(PROJECT_NAME)
 
 
 .PHONY: deps
@@ -50,10 +52,10 @@ test-unit:
 .PHONY: build
 build:
 	@echo "Building application"
-	go build ./cmd/url-shortener
+	go build ./cmd/$(PROJECT_NAME)
 
 
 .PHONY: run
 run: build
 	@echo "Running application"
-	./url-shortener
+	./$(PROJECT_NAME)

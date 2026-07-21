@@ -1,5 +1,7 @@
 module github.com/dalamilla/programming-golang/general/generic/url-shortener
 
-go 1.23.0
+go 1.26
 
-require gopkg.in/yaml.v2 v2.4.0
+require go.etcd.io/bbolt v1.5.0
+
+require golang.org/x/sys v0.45.0 // indirect
